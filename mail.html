@@ -13,9 +13,9 @@
 				height: 300px;
 				position: relative;
 				left: 80%;
-				top: 30%;
+				top: 20%;
 				margin-left: -150px;
-				s margin-top: -80px;
+				margin-top: -20px;
 			}
 			
 			body {
@@ -30,8 +30,8 @@
 			}
 			
 			a:hover {
-				color: blue;
-				text-decoration: underline;
+				color: dimgray;
+				text-decoration: none;
 			}
 			
 			.div1 {
@@ -59,6 +59,13 @@
 				height: 10%;
 				width: 100%;
 			}
+			
+			#red {
+				a {
+					color: red;
+					text-decoration: none;
+				}
+			}
 		</style>
 	</head>
 
@@ -81,15 +88,14 @@
 		</div>
 		<div id="2" class="div2" style="float: right; text-align: left;">
 			<form action="" method="get">
-				<p>
-					邮箱账号登陆</p>
+				<h2 align="center">邮箱账号登陆</h2>
 				<p><input type="text" required="required" placeholder="邮箱账号或手机号 " pattern="\w{1,16}" />@163.com</p>
 				<p><input type="password" required="required" placeholder="密码" pattern="\w{6,16}" /></p>
 				<p> <input type="checkbox" />十天内免登陆
-					<a href="https://reg.163.com/resetpwd/index.do" target="_blank">忘记密码?</a>
+					<a href="https://reg.163.com/resetpwd/index.do" target="_blank" style="float: right;">忘记密码?</a>
 				</p>
 				<input type="submit" value="登陆" style="color: white;background-color: cornflowerblue;" />
-				<a href="http://reg.email.163.com/unireg/call.do?cmd=register.entrance&from=163mail_right"> <input type="button" value="去注册" /> </a>
+				<a href="http://reg.email.163.com/unireg/call.do?cmd=register.entrance&from=163mail_right" style="float: right;"> <input type="button" value="去注册" /> </a>
 				</p>
 				<p>版本
 					<select name="a">
@@ -98,12 +104,20 @@
 						<option value="3">网易邮箱6.0简约版</option>
 
 					</select>
-					正在使用SSL登陆
+					&nbsp;&nbsp;正在使用SSL登陆
 				</p>
 				<p>
-					<a href="http://mail.163.com/dashi/?from=mail5&gotodownload=1" target="_blank" i><img src="img/QQ图片20170903101653.png" /></a>
+					<a href="http://mail.163.com/dashi/?from=mail5&gotodownload=1" target="_blank" ><img src="img/QQ图片20170903101653.png" /></a>
 					<a href="http://mail.163.com/dashi/?from=mail5&gotodownload=1" target="_blank"><input type="button" value="下载使用" /> </a>
 				</p>
+				<ul>
+					<li>
+						<a href="http://activity.mail.163.com/pub/wsPH8r7NsH.html" target="_blank">签到就送豪礼！人人有份！</a>
+					</li>
+					<li>
+						<a id="red" href="http://mail.163.com/html/notice/2017/0214.htm?from=webmail&_r_ignore_uid=nt@163.com" target="_blank">网易邮箱提醒您警防邮件诈骗！</a>
+					</li>
+				</ul>
 			</form>
 		</div>
 
