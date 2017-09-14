@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				z-index: 0;
+				border: 0;
+				list-style: none;
+			}
+			
+			body {
+				background: url(img/QQ图片20170913095521.png);
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-attachment: fixed;
+			}
+			
+			#bg {
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				background: url(http://img.mp.sohu.com/upload/20170519/3241956e7dc7484fb5e40b34976f77c8.gif);
+				z-index: 100;
+				animation: spread 2s ease-out;
+				animation-fill-mode: forwards;
+			}
+			
+			#start3 {
+				height: 225px;
+				width: 225px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505234572447&di=3e3ff273753d61254b46c9c42f0e89ed&imgtype=0&src=http%3A%2F%2Fs8.sinaimg.cn%2Fmw690%2F001PItMTgy6TQ17FxHx97%26690")-146px -123px;
+			}
+			
+			@keyframes spread {
+				0% {
+					transform: scale(1);
+				}
+				25% {
+					transform: scale(1);
+				}
+				50% {
+					transform: scale(1);
+				}
+				99% {
+					transform: scale(1);
+				}
+				100% {
+					transform: scale(0);
+				}
+			}
+			
+			.main {
+				height: 600px;
+				width: 400px;
+				position: absolute;
+				left: 250px;
+				top: 50px;
+				background: white;
+			}
+			
+			.show {
+				height: 80px;
+				width: 160px;
+				position: absolute;
+				left: 700px;
+				top: 50px;
+				/*	border-radius: 40px;*/
+				color: white;
+				font-weight: 700;
+				text-align: center;
+				line-height: 80px;
+				animation: move 2s ease-in;
+				animation-direction: alternate;
+				animation-iteration-count: infinite;
+			}
+			
+			.show:hover {
+				animation-play-state: paused;
+			}
+			
+			.show:hover+.main {
+				z-index: 80;
+			}
+			
+			#sm2 {
+				animation-delay: 0.1s;
+				top: 275px;
+			}
+			
+			#sm3 {
+				animation-delay: 0.2s;
+				top: 500px;
+			}
+			
+			#sm4 {
+				animation-delay: 0.3s;
+				top: 50px;
+				left: 1000px;
+			}
+			
+			#sm5 {
+				animation-delay: 0.4s;
+				top: 275px;
+				left: 1000px;
+			}
+			
+			#sm6 {
+				animation-delay: 0.5s;
+				top: 500px;
+				left: 1000px;
+			}
+			
+			#m1 {
+				z-index: 1;
+			}
+			
+			#mf img {
+				height: 600px;
+				width: 400px;
+				position: absolute;
+			}
+			
+			#mf1 {
+				position: absolute;
+				top: 345px;
+				left: 150px;
+			}
+			
+			#mf1 li {
+				height: 28px;
+				line-height: 28x;
+				font-weight: 600;
+				font-family: "微软雅黑";
+			}
+			
+			@keyframes move {
+				0% {
+					transform: rotateY(0)translate(10px);
+				}
+				25% {
+					transform: rotateY(90deg)translate(30px);
+				}
+				50% {
+					transform: rotateY(180deg)translate(60px);
+				}
+				75% {
+					transform: rotateY(270deg)translate(90px);
+				}
+				100% {
+					transform: rotateY(360deg)translate(120px);
+				}
+			}
+			
+			#m2 {
+				background: url(img/QQ图片20170914191252.png)no-repeat;
+				background-size: 400px 600px;
+			}
+			
+			#m2 li {
+				margin: 10px;
+			}
+			
+			#m3 {
+				color: white;
+				background: url(img/QQ图片20170914193522.png)no-repeat;
+				background-size: 400px 600px;
+				line-height: 30px;
+			}
+			
+			#m4 {
+				color: greenyellow;
+				background: url(img/QQ图片20170914195714.png)no-repeat;
+				background-size: 400px 600px;
+			}
+			
+			#m4 dt {
+				font-size: 16px;
+				font-weight: 600;
+				color: ;
+			}
+			
+			#m4 dd {
+				margin-left: 20px;
+			}
+			
+			#m5 {color: #ecb612;
+				background: url(https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=581581538,2526976743&fm=27&gp=0.jpg)no-repeat;
+				background-size: 400px 600px;
+			}
+			#m5 li{margin: 10px;}
+			#m6 {
+				color: white;
+				background: url(img/QQ图片20170914194426.png)no-repeat;
+				background-size: 400px 600px;
+			}
+			#m6 li{margin: 10px;}
+		</style>
+	</head>
+
+	<body>
+		<!--<div id="bg"></div>-->
+		<div id="start3"></div>
+		<div class="show" id="sm1">我的简历</div>
+		<div class="main" id="m1">
+			<img src="img/QQ图片20170914152446.png" />
+			<div id="mf1">
+				<ul>
+					<li>马钰</li>
+					<li>物联网工程</li>
+					<li>江南大学</li>
+					<li>18861821884</li>
+				</ul>
+			</div>
+		</div>
+		<div class="show" id="sm2">个人信息</div>
+		<div class="main" id="m2">
+			<h1>个人信息</h1>
+			<ul>
+				<li>年龄：22岁</li>
+				<li>身高：175cm</li>
+				<li>民族：汉族</li>
+				<li>籍贯：江苏泰州</li>
+				<li>现居：泰州市</li>
+				<li>面貌：团员</li>
+				<li>婚姻：未婚</li>
+			</ul>
+		</div>
+		<div class="show" id="sm3">毕业院校</div>
+		<div class="main" id="m3">
+			<h1>毕业院校</h1>
+			<p>2013.09~2017.06 江南大学 物联网工程 本科 </p>
+			<p> 主要课程：JAVA编程基础、信号与系统、数字信号处理、模拟电路、数字电路、无线射频识别技术、微机原理、程序设计C语言、ARM嵌入式系统、通信原理、自动控制原理、工程制图等
+			</p>
+		</div>
+		<div class="show" id="sm4">实践经历</div>
+		<div class="main" id="m4">
+			<h1>实践经历</h1>
+			<dl><dt>2013.7~2014.07 物联网工程学院科技部 干事 </dt>
+				<dd>学习AECE6等视频制作知识，进行相关学科发明的制作； </dd>
+				<dd>帮助社团分发海报，进行相关宣传活动 </dd>
+			</dl>
+			<dl><dt>2015.07~2015.08 宏碁电脑 实习生 </dt>
+				<dd>学习台式机的装配与维修，辅助师傅外出修理电脑、打印机、摄像头等等；</dd>
+			</dl>
+			<dl><dt> 2016.07~2017.01 无锡安诺信通信技术有限公司 实习生</dt>
+				<dd>进行通信设备的检测与维修；</dd>
+				<dd>学习部分焊工技术，焊接板件上的一些小配件。</dd>
+			</dl>  
+		</div>
+		<div class="show" id="sm5">项目经验</div>
+		<div class="main" id="m5">
+			<h1>项目经验</h1>
+			<ul>
+				<li>订餐系统设计 </li>
+				<li>搜搜移动大厅设计</li>
+				<li>1号店网页设计</li>
+			</ul>
+			<p>辅助证书</p>
+			<ul>
+				<li>英语六级证书 </li>
+				<li>C1驾照</li>
+			</ul>
+		</div>
+		<div class="show" id="sm6">自我评价</div>
+		<div class="main" id="m6">
+			<h1>自我评价</h1>
+			<ul>
+				<li>1.有良好的沟通表达能力、理解能力及逻辑思维，能够快速学习；</li>
+				<li>2.熟练掌握多种办公软件；</li>
+				<li>3.有团队精神和集体荣誉感，能快速融入团队。</li>
+			</ul>
+		</div>
+	</body>
+
+</html>
